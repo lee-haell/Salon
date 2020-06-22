@@ -1,0 +1,453 @@
+/* 헤더 영역 */
+#wrap header{
+    width: 110px;
+    height: 969px;
+    background: #fff;
+    float: left;
+    position: relative;
+    z-index: 20;
+}
+/* 로고 영역 */
+#wrap header h1{
+    width: 47px;
+    height: 63px;
+    padding-top: 41px;
+    margin: 0 auto;
+}
+/* 햄버거 메뉴 영역 */
+#wrap header #hamburger-menu{
+    width: 42px;
+    height: 19px;
+    position: relative;
+    margin-top: 18.8rem;
+    margin-left: 1.7rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+#wrap header #hamburger-menu a span{
+    height: 3px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+#wrap header #hamburger-menu:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -6px;
+    top: -17px;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #DACCC2;
+    border-bottom: 1px solid #DACCC2;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+#wrap header #hamburger-menu.active:before{ opacity: 1; }
+
+#wrap header #hamburger-menu.active a span:first-child{
+    transform: rotate(42deg)  translate(7px, 6px);
+}
+#wrap header #hamburger-menu.active a span:nth-child(2){
+    width: 0;
+    opacity: 0;
+}
+#wrap header #hamburger-menu.active a span:last-child{
+    width: 36px;
+    transform: rotate(-42deg)  translate(4px, -5px);
+}
+#wrap header #hamburger-menu a span:first-child{
+    width: 36px;
+    background: #d0b188;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#wrap header #hamburger-menu a span:nth-child(2){
+    width: 42px;
+    background: #d0b188;
+    position: absolute;
+    top: 8px;
+}
+#wrap header #hamburger-menu a span:nth-child(3){
+    width: 30px;
+    background: #d0b188;
+    position: absolute;
+    top: 16px;
+}
+
+/* sns 영역 */
+#wrap header .header-sns{
+    width: 40px;
+    height: 150px;
+    position: relative;
+    margin-top: 14rem;
+    margin-left: 1.75rem;
+}
+#wrap header .header-sns div{ background: url(../images/front.png) top no-repeat; }
+
+#wrap header .header-sns #kakao{
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    margin-bottom: 15px;
+}
+#wrap header .header-sns #insta{
+    width: 40px;
+    height: 40px;
+    background-position: -45px 0;
+    margin-bottom: 15px;
+}
+#wrap header .header-sns #facebook{
+    width: 40px;
+    height: 40px;
+    background-position: -90px 0;
+}
+
+/* 메뉴 영역 */
+#wrap .full-menu{ 
+    width: 100%;
+    position: absolute;
+    left: -1920px;
+    z-index: 15;
+    margin-left: 5.5rem;
+    transition: all .3s ease;
+}
+#wrap .full-menu:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 969px;
+    background: #e5dfd6;
+}
+#wrap .full-menu nav{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    margin-top: -33.45rem;
+    margin-left: 53.75%;
+    height: auto;
+}
+#wrap .full-menu nav ul{
+    width: 100%;
+    height: 100%;
+}
+#wrap .full-menu nav ul li{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    line-height: 43px;
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+#wrap .full-menu nav ul li:first-of-type{
+    display: inline-block;
+    font: 600 2rem 'Raleway-Regular';
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 3.5rem;
+}
+#wrap .full-menu nav ul>li>a{
+    display: inline-block;
+    font: 300 1.6rem 'Raleway-Regular';
+    color: #393a3f;
+}
+#wrap .full-menu nav ul>li:first-of-type a{
+    font-weight: 600;
+    color: #fff;
+}
+#wrap .full-menu nav ul li .arrow{
+    width: 46px;
+    height: 43px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+    opacity: 0;
+}
+#wrap .full-menu nav ul li .arrow:before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 2px;
+    border-radius: 5px;
+    background: #A28A80;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2.7px;
+}
+#wrap .full-menu nav ul li .arrow:after{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 2px;
+    border-radius: 5px;
+    background: #A28A80;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+}
+
+/* 메인 텍스트 영역 */
+#wrap .mainTxt-wrap{
+    width: 900px;
+    height: 969px;
+    background: #d0b188;
+    float: left;
+    position: absolute;
+    z-index: 10;
+}
+#wrap .mainTxt-wrap .mainTxt{
+    width: 61.5%;
+    height: 198px;
+    margin-top: 16.5rem;
+    margin-left: 10rem;
+}
+#wrap .mainTxt-wrap .mainTxt h2{
+    font: 400 1rem 'Noto Sans KR';
+    color: #444;
+}
+#wrap .mainTxt-wrap .mainTxt strong{
+    display: block;
+    font: 400 2.5rem 'Raleway-Regular';
+    color: #393a3f;
+    margin-bottom: 1.5rem;
+}
+#wrap .mainTxt-wrap .mainTxt button{
+    width: 186px;
+    height: 55px;
+    border: 0;
+    background: #666;
+    border-radius: 10px;
+    font: 400 0.8rem 'Noto Sans KR';
+    color: #fff;
+}
+
+/* 슬라이드 버튼 영역 */
+#wrap .mainTxt-wrap .btn-slide{
+    width: 145px;
+    height: 28px;
+    position: absolute;
+    z-index: 15;
+    left: 88%;
+    top: 99px;
+}
+#wrap .mainTxt-wrap .btn-slide a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #393a3f;
+}
+#wrap .mainTxt-wrap .btn-slide p{
+    font: 300 1.1rem 'Raleway-Regular';
+    float: left;
+    margin-right: 15px;
+}
+#wrap .mainTxt-wrap .btn-slide a>span{
+    display: inline-block;
+    width: 73px;
+    height: 28px;
+    position: absolute;
+    overflow: hidden;
+}
+#wrap .mainTxt-wrap .btn-slide a>span>img{
+    position: absolute;
+    top: -2.25rem;
+}
+
+/* 푸터 영역 */
+#wrap .mainTxt-wrap .footer{
+    width: 80%;
+    height: 53px;
+    margin-top: 17.5rem;
+    margin-left: 20%;
+}
+#wrap .mainTxt-wrap .footer ul{
+    width: 100%;
+    height: 100%;
+}
+#wrap .mainTxt-wrap .footer ul li{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-left: .5rem;
+}
+#wrap .mainTxt-wrap .footer ul li a{
+    font: 400 0.7rem 'Noto Sans KR';
+    color: #fff;
+}
+
+/* 메인 비주얼 영역 */
+#wrap .main-visual{
+    width: 1020px;
+    height: 824px;
+    position: relative;
+    z-index: 1;
+    margin-left: 45rem;
+    background-color: darkkhaki;
+}
+
+/* 첫번째 비주얼(왼쪽 숨김) */
+#wrap .main-visual .main-visual-inner01{
+    width: 510px;
+    height: 824px;
+    position: absolute;
+    left: -510px;
+    z-index: 3;
+    float: left;
+}
+#wrap .main-visual .main-visual-inner01 #hair-cut03{
+    width: 510px;
+    height: 824px;
+    position: absolute;
+    z-index: 2;
+}
+#wrap .main-visual .main-visual-inner01 #hair-cut04{
+    width: 510px;
+    height: 824px;
+    position: absolute;
+    z-index: 1;
+}
+#wrap .main-visual .main-visual-inner02{
+    width: 1020px;
+    height: 824px;
+    position: absolute;
+    z-index: -1;
+}
+#wrap .main-visual .main-visual-inner02 #hair-cut01, #hair-cut02{
+    width: 510px;
+    height: 824px;
+    float: left;
+}
+
+/* 헤어 디자이너 영역 */
+#wrap .hair-designer{
+    width: 1020px;
+    height: 145px;
+    position: absolute;
+    z-index: 1;
+    left: 900px;
+    background: #393a3f;
+    overflow: hidden;
+}
+/* 헤어 디자이너 - 우현 점장 영역 */
+#wrap .hair-designer .designer-woo{
+    width: 760px;
+    height: 145px;
+    position: absolute;
+    top: -145px;
+    z-index: -1;
+    background: #393a3f;
+}
+#wrap .hair-designer .designer-woo>a{
+    width: 145px;
+    height: 145px;
+    position: absolute;
+}
+#wrap .hair-designer .designer-woo #woo-wrap{
+    width: 480px;
+    height: 83px;
+    margin-left: 9.2rem;
+    padding-top: 1.4rem;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo{
+    width: 30%;
+    height: 34px;
+    float: left;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo span{
+    display: inline-block;
+    width: 3px;
+    height: 22px;
+    vertical-align: -3px;
+    background: #d0b188;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo h3{
+    display: inline-block;
+    margin-left: 0.9rem;
+    font: 400 1.2rem 'Noto Sans KR';
+    color: #fff;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo h4{
+    display: inline-block;
+    margin-left: 0.6rem;
+    font: 400 0.8rem 'Noto Sans KR';
+    color: #fff;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo-info{
+    width: 83%;
+    height: 75px;
+    padding-top: 0.4rem;
+    padding-left: 7rem;
+}
+#wrap .hair-designer .designer-woo #woo-wrap #woo-info p{
+    display: inline-block;
+    margin-bottom: 1.7rem;
+    font: 400 0.8rem 'Noto Sans KR';
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+/* 헤어 디자이너 - 이랑 점장 영역 */
+#wrap .hair-designer .designer-irang{
+    width: 760px;
+    height: 145px;
+    position: absolute;
+    z-index: 1;
+}
+#wrap .hair-designer .designer-irang>a{
+    width: 145px;
+    height: 145px;
+    position: absolute;
+}
+#wrap .hair-designer .designer-irang #irang-wrap{
+    width: 600px;
+    height: 83px;
+    margin-left: 9.2rem;
+    padding-top: 1.4rem;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang{
+    width: 25%;
+    height: 34px;
+    float: left;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang span{
+    display: inline-block;
+    width: 3px;
+    height: 22px;
+    vertical-align: -3px;
+    background: #d0b188;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang h3{
+    display: inline-block;
+    margin-left: 0.9rem;
+    font: 400 1.2rem 'Noto Sans KR';
+    color: #fff;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang h4{
+    display: inline-block;
+    margin-left: 0.6rem;
+    font: 400 0.8rem 'Noto Sans KR';
+    color: #fff;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang-info{
+    width: 83%;
+    height: 75px;
+    padding-top: 0.4rem;
+    padding-left: 7rem;
+}
+#wrap .hair-designer .designer-irang #irang-wrap #irang-info p{
+    display: inline-block;
+    font: 400 0.8rem 'Noto Sans KR';
+    line-height: 1.5rem;
+    color: #fff;
+}
+#wrap .hair-designer .designer-sns{
+    display: inline-block;
+    background: url(../images/front.png) right top no-repeat;
+    background-size: auto 52px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 47.95rem;
+}
