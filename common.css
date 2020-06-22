@@ -160,7 +160,7 @@
     width: 46px;
     height: 43px;
     position: relative;
-    top: .8rem;
+    top: 10px;
     left: -15px;
     opacity: 0;
 }
@@ -173,7 +173,7 @@
     background: #A28A80;
     transform: rotate(45deg);
     position: absolute;
-/*    left: -25px;*/
+    top: 2.7px;
 }
 #wrap .full-menu nav ul li .arrow:after{
     content: "";
@@ -184,8 +184,7 @@
     background: #A28A80;
     transform: rotate(-45deg);
     position: absolute;
-    top: 1.5px;
-/*    left: -25px;*/
+    top: 10px;
 }
 
 /* 메인 텍스트 영역 */
@@ -288,7 +287,7 @@
 }
 
 /* 첫번째 비주얼(왼쪽 숨김) */
-#wrap .main-visual .hair-cut01{
+#wrap .main-visual .main-visual-inner01{
     width: 510px;
     height: 824px;
     position: absolute;
@@ -296,30 +295,25 @@
     z-index: 3;
     float: left;
 }
-#wrap .main-visual .hair-cut01 #woman-cut01{
+#wrap .main-visual .main-visual-inner01 #hair-cut03{
     width: 510px;
     height: 824px;
     position: absolute;
     z-index: 2;
 }
-#wrap .main-visual .hair-cut01 #man-cut01{
+#wrap .main-visual .main-visual-inner01 #hair-cut04{
     width: 510px;
     height: 824px;
     position: absolute;
     z-index: 1;
 }
-#wrap .main-visual .hair-cut02{
+#wrap .main-visual .main-visual-inner02{
     width: 1020px;
     height: 824px;
     position: absolute;
     z-index: -1;
 }
-#wrap .main-visual .hair-cut02 #woman-cut02{
-    width: 510px;
-    height: 824px;
-    float: left;
-}
-#wrap .main-visual .hair-cut02 #man-cut02{
+#wrap .main-visual .main-visual-inner02 #hair-cut01, #hair-cut02{
     width: 510px;
     height: 824px;
     float: left;
