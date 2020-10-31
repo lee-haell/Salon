@@ -7,4 +7,4 @@
 
 - 헤어살롱, 살롱아더뷰 메인페이지를 리뉴얼 했습니다.
 
-![Uploading ezgif.com-gif-maker (2).gif…]()
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/64449865/97777492-e6310400-1bb3-11eb-9a4f-da5922e6269e.gif)
